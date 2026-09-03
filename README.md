@@ -1,4 +1,5 @@
 <h1>
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -44,7 +45,15 @@ body{
     overflow-x:hidden;
 }
 
-/* BARRA SUPERIOR */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:50;
+    opacity:.20;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
+}
 
 .topline{
     height:5px;
@@ -348,13 +357,21 @@ section{
     margin:0 0 5px;
 }
 
+/* ==================================================
+   CAMBIO SOLICITADO:
+   TIPOGRAFÍA DE LAS DESCRIPCIONES
+   ================================================== */
+
 .card p{
     margin:0;
     color:#5d5a53;
-    font-family:"Cormorant Garamond",Georgia,serif;
-    font-size:18px;
-    line-height:1.28;
+    font-family:"DM Sans",Arial,sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.65;
 }
+
+/* ETIQUETA */
 
 .pill{
     display:inline-block;
@@ -532,10 +549,16 @@ section{
     font-size:13px;
 }
 
+/* ==================================================
+   CAMBIO SOLICITADO:
+   DESCRIPCIÓN DENTRO DE LA FICHA
+   ================================================== */
+
 .description{
-    font-family:"Cormorant Garamond",Georgia,serif;
-    font-size:21px;
-    line-height:1.42;
+    font-family:"DM Sans",Arial,sans-serif;
+    font-size:15px;
+    font-weight:400;
+    line-height:1.75;
     color:#55534d;
     margin:22px 0;
 }
@@ -704,7 +727,8 @@ footer{
     }
 
     .description{
-        font-size:19px;
+        font-size:14px;
+        line-height:1.7;
     }
 
     .facts{
@@ -1475,6 +1499,12 @@ document.addEventListener(
 
     }
 );
+
+</script>
+
+</body>
+</html>
+```
 
 </script>
 
