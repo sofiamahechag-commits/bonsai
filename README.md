@@ -8,6 +8,19 @@
 <title>盆栽 | El arte del Bonsái</title>
 
 <style>
+.note{
+    margin-top:25px;
+    padding:15px 18px;
+    border-left:4px solid var(--terracotta);
+    background:rgba(183,139,74,.10);
+    color:#4b4a44;
+    font-family:"Cormorant Garamond", Georgia, serif;
+    font-size:17px;
+    font-weight:500;
+    line-height:1.6;
+    letter-spacing:0.3px;
+    border-radius:0 10px 10px 0;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Klee+One:wght@400;600&display=swap');
 
